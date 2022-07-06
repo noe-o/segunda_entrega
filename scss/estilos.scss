@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background: #bd0003;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 12px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: #00bdba;
+    font-size: 20px;
+}
+
+section#plantillaIndex {
+    background-color: black;
+    text-align: center;
+    height: 230px;
+    padding-top: 50px;
+}
+
+/* estas clases las armé para ambas páginas*/
+.tit {
+    padding: 20px;
+    font-size: 35px;
+    text-decoration: underline 1px;
+    text-shadow: -1px 1px white;
+    font-weight: bold;
+}
+
+.bg-lightBlue {
+    background-color: #aceeed;
+}
+
+.bg-rosa{
+    background-color: #ffe4db;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: #00bdba;
+    font-size: 20px;
+}
+
+.divEspacio {
+    padding: 20px;
+}
+
+/*Modifico card. Lo uso en Galería*/
+.card {
+    background-color: 'rgb(255, 228, 219, 0.5)';
+    text-align: center;
+    width: fit-content;
+    padding: 20px;
+}
+
+/*esta sección solo aparece en Galería*/
+section#seguinos {
+    background-color: black;
+    color: #ffe4db;
+    text-align: center;
+
+}
+
+/*uso media para ocultar la parte de contacto cuando sea menor a 992px*/
+@media screen and (max-width: 992px) {
+    #publi{
+        display: none;
+    }
+
+    #ppal{
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #bd0003;
+    text-align: center;
+    color: #00bdba;
+}
