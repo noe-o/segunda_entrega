@@ -3,6 +3,17 @@
     padding: 0px;
 }
 
+$rosa: #ffe4db;
+$lightBlue: #aceeed;
+
+.bg-lightBlue {
+    background-color: $lightBlue;
+}
+
+.bg-rosa {
+    background-color: $rosa;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -12,22 +23,22 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-}
 
-header nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 12px;
-}
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 12px;
 
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-}
+        a {
+            text-decoration: none;
+            color: white;
 
-header nav ul li a:hover {
-    color: #00bdba;
-    font-size: 20px;
+            &:hover {
+                color: #00bdba;
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 section#plantillaIndex {
@@ -46,22 +57,16 @@ section#plantillaIndex {
     font-weight: bold;
 }
 
-.bg-lightBlue {
-    background-color: #aceeed;
-}
-
-.bg-rosa{
-    background-color: #ffe4db;
-}
-
-.link{
+/*color del botón de contacto*/
+.link {
     text-decoration: none;
     color: white;
-}
 
-.link:hover{
-    color: #00bdba;
-    font-size: 20px;
+    &:hover {
+        color: #00bdba;
+        font-size: 20px;
+
+    }
 }
 
 .divEspacio {
@@ -86,11 +91,11 @@ section#seguinos {
 
 /*uso media para ocultar la parte de contacto cuando sea menor a 992px*/
 @media screen and (max-width: 992px) {
-    #publi{
+    #publi {
         display: none;
     }
 
-    #ppal{
+    #ppal {
         width: 100%;
     }
 }
